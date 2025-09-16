@@ -1,9 +1,6 @@
 package com.gec.oceanbioproject.resp;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @Data
 @ToString
@@ -19,6 +16,10 @@ public class Result<T> {
     public Result(boolean success, String message, T content) {
         this.success = success;
         this.message = message;
+        this.content = content;
+    }
+
+    public void setContent(T content) {
         this.content = content;
     }
 }
