@@ -14,9 +14,7 @@ public class Ebook {
     private Long category2Id;
     private String description;
     private String cover;
-    private int docCount;
-    private int viewCount;
-    private int voteCount;
-
-
+    private Integer docCount;
+    private Integer viewCount;
+    private Integer voteCount;
 }

@@ -12,6 +12,9 @@ public class CommonResp<T> {
         this.content = content;
     }
 
+    public CommonResp(boolean b, String 成功, Object o) {
+    }
+
     public boolean isSuccess() {
         return success;
     }
